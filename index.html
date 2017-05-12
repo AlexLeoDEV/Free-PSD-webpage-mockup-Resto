@@ -5,6 +5,10 @@
 		<title>Resto</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/little-star-rating.css">
+		<!-- font awesome -->
+  		<!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <head>
 	<body>
 		<header>
@@ -49,18 +53,21 @@
 				<div class="container">
 					<!-- <img src="img/slide1.jpg" alt="background"> -->
 					<h1>This template is awesome</h1>
-					<p>resto restaurants home page website template<p>				
+					<p>resto restaurants home page website template<p>								
 				</div>				
 			</section>
-			
+			<section class="menu-strip">
+				<div class="the-menu-strip"></div>
+				<img src="img/the_menu_strip.png" alt="the menu strip">			
+			</section>
 			<article class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<section>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6"">
 								<h3>Voluptate cillum fugiat</h3>							
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$50</h3>
 							</div>									
 							<div class="col-md-12">
@@ -71,7 +78,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Metus varius laoreet</h3>
 							</div>
-							<div class="col-lg-6 col-md-6" >
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$62</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -82,7 +89,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Donec sodales magna</h3>
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$25</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -93,7 +100,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Saugue velit cursus</h3>	
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$30</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -101,12 +108,12 @@
 							</div>
 						</section>
 					</div>
-					<div class="col-md-6">
+					<div class="col-lg-6 col-md-6">
 						<section>
 							<div class="col-lg-6 col-md-6">
-								<h3>Arcu pede enim justo.</h3><h3>$45</h3>
+								<h3>Arcu pede enim justo.</h3>
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$45</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -117,7 +124,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Cras dapibussemper nisi</h3>
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$32</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -128,7 +135,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Quam semper libero</h3>
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$15</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -139,7 +146,7 @@
 							<div class="col-lg-6 col-md-6">
 								<h3>Nam eget dui Etiam</h3>
 							</div>
-							<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6" style="text-align: right">
 								<h3>$35</h3>
 							</div>
 							<div class="col-lg-12 col-md-12">
@@ -147,7 +154,7 @@
 							</div>
 						</section>
 					</div>
-					<div id="load-more">														
+					<div id="load-more" >														
 						<button class="btn btn-default btn-sm dropdown-toggle">load more | 
 							<span class="glyphicon glyphicon-menu-down"></span>
 						</button>
@@ -158,7 +165,12 @@
 			<!-- FEATURED DISHES -->
 			<article class="container" id="dishes">
 				<div class="row">
-					<h2>Featured Dishes</h2>					
+					<table>
+						<tr>
+							<td><h2>Featured Dishes</h2></td>
+							<td><div class="category-strip"></div></td>
+						</tr>
+					</table>	
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">	
 						<!--SLIDES -->
 						<div class="carousel-inner" role="listbox">
@@ -168,26 +180,86 @@
 									<div class="col-lg-3 col-md-3">
 										<a href="#" id="dish">
 											<img src="img/dishes/item1.jpg" alt="item1"/>
-											<p>Fugiat nulla sint</p><span>$30</span>	
+											<p style="display: inline-block; color: #b1b1b1; ">Fugiat nulla sint</p><p style="display: inline-block; margin-left: 6em; color: #b1b1b1;">$30</p>	
 										</a>
+										<!-- Star Rating -->
+									      <div class="star-rating">
+									        <div class="star-rating__wrap">
+									          <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+									        </div>
+									      </div>					
 									</div>
 									<div class="col-lg-3 col-md-3">
 										<a href="#" id="dish">
 											<img src="img/dishes/item2.jpg" alt="item2"/>
-											<p>Daute irute dolor</p><span>$24</span>
+											<p style="display: inline-block; color: #b1b1b1;">Daute irute dolor</p><p style="display: inline-block; margin-left: 5.7em; color: #b1b1b1;">$24</p>
 										</a>
+										<!-- Star Rating -->
+									      <div class="star-rating">
+									        <div class="star-rating__wrap">
+									          <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+									        </div>
+									      </div>					
 									</div>
 									<div class="col-lg-3 col-md-3">
 										<a href="#" id="dish">
 											<img src="img/dishes/item3.jpg" alt="item3"/>				
-											<p>Officia deserunt mollit</p><span>$60</span>
+											<p style="display: inline-block; color: #b1b1b1;">Officia deserunt mollit</p><p style="display: inline-block; margin-left: 3.5em; color: #b1b1b1;">$60</p>
 										</a>
+										<!-- Star Rating -->
+									      <div class="star-rating">
+									        <div class="star-rating__wrap">
+									          <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+									        </div>
+									      </div>					
 									</div>
 									<div class="col-lg-3 col-md-3">
 										<a href="#" id="dish">
 											<img src="img/dishes/item4.jpg" alt="item4"/>
-											<p>Pim minim veniam</p><span>$17</span>
+											<p style="display: inline-block; color: #b1b1b1;">Pim minim veniam</p><p style="display: inline-block; margin-left: 5em; color: #b1b1b1;">$17</p>
 										</a>
+										<!-- Star Rating -->
+									      <div class="star-rating">
+									        <div class="star-rating__wrap">
+									          <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									          <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									          <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+									        </div>
+									      </div>					
 									</div>
 								</section>
 							</div>
@@ -259,9 +331,14 @@
 			<!-- THE GALLERY -->
 			<article class="container" id="gallery">
 				<div class="row">
-					<h2>The Gallery</h2>
+				<table>
+						<tr>
+							<td><h2 style="margin-left: 0;">The Gallery</h2></td>
+							<td><div class="category-strip"></div></td>
+						</tr>
+					</table>
 					<div class="col-lg-4 col-md-4">
-						<a href="#" class="thumbnail"><img src="img/gallery/item1.jpg" alt="item 1"/></a>
+						<a href="#" class="thumbnail"><img class="zoom" src="img/gallery/item1.jpg" alt="item 1"/></a>
 					</div>
 					<div class="col-lg-4 col-md-4">
 						<a href="#" class="thumbnail"><img src="img/gallery/item2.jpg" alt="item 2"/></a>
@@ -305,7 +382,8 @@
 			</section>
 		</footer>
 		<!--SCRIPTS-->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/jquery.js"></script>
 	</body>
 </html>

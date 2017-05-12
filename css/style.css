@@ -33,6 +33,17 @@ body {
 	background-color: #ffffff;
 }
 
+table{
+	margin-bottom: 2.5em;
+}
+
+h2{
+	margin-left: 10px;
+	text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;	
+}
+
 /*NAVBAR*/
 nav.navbar {
 	align-content: center;
@@ -49,6 +60,7 @@ nav.navbar {
 	color: white;
 	background: #3e3e3e;
 	height: 580px;
+	margin-bottom: 0;
 }
 div.container h1 {
 	margin-top: 180px;	
@@ -60,20 +72,27 @@ div.container p {
 	z-index: 5;
 }
 
-span.jumbo-strip{
-	/*background: orange;*/
+/*THE MENU*/
+section.menu-strip{
+	text-align: center;
+	margin-bottom: 70px;
+} 
+
+.the-menu-strip{
+	background: #f34949;
 	margin-bottom: 0;
-	height: 1px;
-	width: 30px;
+	height: 3px;
+	width: 100%;
 	z-index: 10;
 }
 
-/*THE MENU*/
-div.col-md-6  h3{
-/*	margin-right: 220px;*/
-	/*margin-bottom: 0;*/
+div.col-lg-6.col-md-6  h3{
 	display: inline-block;
 	font-size: 1.2em;
+}
+
+div#align-r.col-lg-6.col-md-6 h3{
+	text-align: right;
 }
 
 div.col-md-6 span{
@@ -89,12 +108,49 @@ div.col-md-6 p{
 }
 
 #load-more{
-	margin-left: 28em;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+
+#load-more button{
+	margin-top: 100px;
+	border-radius: 0 0 0 0;
 }
 
 /*FEATURED DISHES*/
+
+
+div.category-strip{
+	background: #e0dbdb;
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 1px;
+	width: 11em;
+}
+
+#dishes{
+	margin-top: 170px;
+}
+
 a#dish span{
 	margin-right: 30px;
+}
+
+/*THE GALLERY*/
+
+#gallery{
+	margin-top: 170px;
+}
+
+div.col-lg-4.col-md-4{
+	padding: 0;
+}
+
+a.thumbnail{
+	padding: 0;
+	margin-bottom: 0;
+	border: 0;
 }
 
 /*FOOTER*/
